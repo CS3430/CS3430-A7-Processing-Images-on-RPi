@@ -31,8 +31,7 @@ def compute_avrg_luminosity(imagepath):
     for r in xrange(rows):
         for c in xrange(cols):
             totalLum += luminosity(image[r,c])
-
-    return totalLum/image.size
+    return totalLum/(r*c)
 
 
 # This generator takes an directory where images are stored and a regular
